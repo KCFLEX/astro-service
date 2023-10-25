@@ -11,10 +11,10 @@ COPY . .
 RUN go get -d -v ./...
 
 # Build the go app
-RUN go build -o crud .
+RUN go build -o astro-service .
 
 #EXPOSE the port
 EXPOSE 8000
 
 # Run th excutable 
-CMD ["./crud"]
+CMD ["./astro-service"]
